@@ -9,18 +9,7 @@ import Login from "./pages/Login"
 import Signup from "./pages/Singup"
 
 
-import Error from "./pages/Error"
-
-
-import { AboutUs } from "./pages/AboutUs";
-
-
-
-
 function App() {
-
-  
-
 
   return (
    <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">
@@ -32,18 +21,8 @@ function App() {
       <Route path="/" element={<Home/>} />
     
       {/* Auth */}
-      <Route path="signup"
-       element={<OpenRoute>  <Signup/> </OpenRoute>} 
-       />
-
-       
-      <Route path="login" 
-      element={<OpenRoute>  <Login/>  </OpenRoute> } 
-      />
-
-      <Route path="/about" element={<AboutUs/>} />
-      <Route path="*" element={<Error />} />
-
+      <Route path="signup" element={<OpenRoute>  <Signup/> </OpenRoute>}  />
+      <Route path="login"  element={<OpenRoute>  <Login/>  </OpenRoute> }  />
 
     </Routes>
 
